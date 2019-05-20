@@ -2,6 +2,9 @@
 title: Ro Match
 timezone: UTC
 collections:
+  docs:
+    title: Docs
+    output: true
   posts:
     title: Posts
     output: true
