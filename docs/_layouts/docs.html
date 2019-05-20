@@ -24,15 +24,22 @@ layout: default
           </a>
         </p>
       </div>
-      <script
-        src="https://utteranc.es/client.js"
-        repo="Dog2puppy/RoMatch"
-        issue-term="pathname"
-        label="Comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async
-      ></script>
+      <div id="gitalk-container"></div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+      <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+      <script>
+        const gitalk = new Gitalk({
+          clientID: 'GitHub Application Client ID',
+          clientSecret: 'GitHub Application Client Secret',
+          repo: 'GitHub repo',
+          owner: 'GitHub repo owner',
+          admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+          id: location.pathname,      // Ensure uniqueness and length less than 50
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+      </script>
       <hr />
       {% include section_nav.html %}
     </div>
