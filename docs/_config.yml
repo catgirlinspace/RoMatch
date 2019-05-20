@@ -5,8 +5,8 @@ description: >
   RoMatch is a module for easy matchmaking on Roblox.
 lang: en-US
 
-baseurl: "/RoMatch" # the subpath of your site, e.g. /blog/
-url: https://Dog2puppy.github.io/RoMatch # the base hostname & protocol for your site
+baseurl: / # the subpath of your site, e.g. /blog/
+url: hhttps://romatch.netlify.com/ # the base hostname & protocol for your site
 git_address: https://github.com/Dog2puppy/RoMatch
 git_edit_address: https://github.com/Dog2puppy/RoMatch/blob/master/docs
 
