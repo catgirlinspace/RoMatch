@@ -1,0 +1,7 @@
+site_name: RoMatch Doccumentation
+
+theme:
+  name: 'material'
+
+repo_name: 'Dog2puppy/RoMatch'
+repo_url: 'https://github.com/Dog2puppy/RoMatch'
